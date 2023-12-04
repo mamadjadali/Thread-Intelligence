@@ -4,7 +4,7 @@ type Social = {
 };
 
 type Presentation = {
-  mail: string;
+  /*mail: string;*/
   title: string;
   description: string;
   socials: Social[];
@@ -12,23 +12,19 @@ type Presentation = {
 };
 
 const presentation: Presentation = {
-  mail: "maxencewolff.pro@gmail.com",
-  title: "Hi, I’m Maxence 👋",
+  /*mail: "jadalimamad@protonmail.com",*/
+  title: "Thread Intelligence",
   // profile: "/profile.webp",
   description:
-    "Bonjour, i'm a *french frontend developer* with over *3 years* of web experience. I am currently working with *NextJS and Typescript*. Outside of work I complete my pokemon card collection and learning TypeScript.",
+    "Bonjour, new *Thread Intelligence Resource* which aims to provide *in-depth knowledge* of how threat actors target different industries, the *Tools* they use, and their possible motivations. This resource will offer contextual, anticipative, and actionable *cyberthreat* intelligence to help defend our organization against *Malware* and *Cyberattacks*.",
   socials: [
     {
       label: "X",
-      link: "https://twitter.com/itsstormzz_",
-    },
-    {
-      label: "Bento",
-      link: "https://bento.me/m-wolff",
+      link: "https://x.com/Mamadjimjim",
     },
     {
       label: "Github",
-      link: "https://github.com/MaeWolff",
+      link: "https://github.com/mamadjadali",
     },
   ],
 };
