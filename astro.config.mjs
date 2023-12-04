@@ -9,7 +9,7 @@ import { SITE_URL } from "./src/data/config";
 export default defineConfig({
   integrations: [tailwind(), sitemap(), robotsTxt()],
   site: 'https://mamadjadali.github.io',
-  base: '/    Thread-Intelligence',
+  base: '/Thread-Intelligence',
   markdown: {
     syntaxHighlight: "shiki",
     shikiConfig: {
