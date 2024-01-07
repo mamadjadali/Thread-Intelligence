@@ -43,6 +43,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
           class="w-auto max-w-[60ch] leading-6"
           set:html={convertAsteriskToStrongTag(presentation.description)}
         />
+        <div class="flex flex-row gap-6">
         <style>
           .Btn {
             width: 45px;
@@ -102,6 +103,13 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
             </span>
           <span class="BG"></span>
         </button>
+        <button class="Btn">
+            <span class="svgContainer">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" fill="white" height="1.6em"><g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M26.37,26l-8.795,-12.822l0.015,0.012l7.93,-9.19h-2.65l-6.46,7.48l-5.13,-7.48h-6.95l8.211,11.971l-0.001,-0.001l-8.66,10.03h2.65l7.182,-8.322l5.708,8.322zM10.23,6l12.34,18h-2.1l-12.35,-18z"/></g></g></svg>
+            </span>
+          <span class="BG"></span>
+        </button>
+        </div>
         <!--<SocialLinks />-->
         <div class="grid grid-cols-2 gap-1.5 ">
           <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/Linux-454955?style=for-the-badge&logo=linux&logoColor=white"></a>
@@ -117,15 +125,17 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
           <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/Django-1b7742?style=for-the-badge&logo=django&logoColor=white"></a>
           <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/JavaScript-ffe066?style=for-the-badge&logo=javascript&logoColor=f17300"></a>
           <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"></a>
+          <a href="#" class="m-auto"><img class=" rounded hover:brightness-50 hover:scale-95 duration-300" alt="CodeWars" src="https://img.shields.io/badge/Codewars-6 kyu-007ACC?style=for-the-badge&logo=Codewars&logoColor=white"></a>
         </div>
       </div>
 
     </article>
 
     <article class="flex flex-col gap-8">
-      <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-neutral-100">Latest posts</h3>
-        <Link href="posts" label="See all posts" isUnderline target="_self" />
+      <header class="flex w-full flex-row gap-3">
+        <svg stroke="white" fill="none" stroke-width="2.5" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="2.3rem" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M14.5 4h2.5a3 3 0 0 1 3 3v10a3 3 0 0 1 -3 3h-10a3 3 0 0 1 -3 -3v-5"></path><path d="M6 5l-2 2l2 2"></path><path d="M10 9l2 -2l-2 -2"></path></svg>
+        <h3 class="text-lg text-neutral-100 m-1">Code</h3>
+        <!--<Link href="posts" label="See all posts" isUnderline target="_self" />-->
       </header>
       {posts.length === 0 && <p>Soon, stay connected 👀...</p>}
 
@@ -147,7 +157,8 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
     </article>
 
     <article class="flex flex-col gap-8">
-      <header class="flex w-full flex-row justify-between gap-2">
+      <header class="flex w-full flex-row gap-5">
+        <svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 640 512" height="1.5rem" xmlns="http://www.w3.org/2000/svg"><path d="M384 320H256c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h128c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32zM192 32c0-17.67-14.33-32-32-32H32C14.33 0 0 14.33 0 32v128c0 17.67 14.33 32 32 32h95.72l73.16 128.04C211.98 300.98 232.4 288 256 288h.28L192 175.51V128h224V64H192V32zM608 0H480c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h128c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32z"></path></svg>
         <h3 class="text-lg text-neutral-100">
           Projects
         </h3>
