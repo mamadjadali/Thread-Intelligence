@@ -9,57 +9,57 @@ const projects: Project[] = [
   {
     title: "Object Detection",
     techs: ["🐍 Python","Machine Learning"],
-    link: "https://github.com/MaeWolff/dictionary-app",
+    link: "",
   },
   {
     title: "Webapp",
     techs: ["🦀 Rust","Axum"],
-    link: "https://github.com/MaeWolff/dictionary-app",
+    link: "",
   },
   {
     title: "Face Recognition ",
     techs: ["🐍 Python","Vision"],
-    link: "https://github.com/MaeWolff/dictionary-app",
+    link: "",
   },
   {
     title: "RestAPI",
     techs: ["🦀 Rust","Next.js","Docker","Postgres"],
-    link: "https://github.com/MaeWolff/dictionary-app",
+    link: "",
   },
   {
     title: "Uber",
     techs: ["React Native","Tailwind"],
-    link: "https://github.com/MaeWolff/dictionary-app",
+    link: "",
   },
   {
     title: "Web3 Messenger",
     techs: ["Next.js","DAPP"],
-    link: "https://github.com/MaeWolff/dictionary-app",
+    link: "",
   },
   {
     title: "ParsComTel",
     techs: ["Astro","Tailwind"],
-    link: "https://github.com/MaeWolff/dictionary-app",
+    link: "",
   },
   {
     title: "Data Pipeline",
     techs: ["🦀 Rust","Ownership model"],
-    link: "https://github.com/MaeWolff/dictionary-app",
+    link: "",
   },
   {
     title: "Network Application",
     techs: ["🦀 Rust","TCP-UDP"],
-    link: "https://github.com/MaeWolff/dictionary-app",
+    link: "",
   },
   {
     title: "Drone Flight",
     techs: ["Cpp (QT)"],
-    link: "https://github.com/MaeWolff/dictionary-app",
+    link: "",
   },
   {
     title: "Tesla Dashboard",
     techs: ["CPP (QT)"],
-    link: "https://www.linablidi.fr/",
+    link: "",
   },
   {
     title: "WebScrapping",
