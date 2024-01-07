@@ -7,7 +7,7 @@ const MAP_COLOR_VARIANT_TO_BG: Record<TailwindColor, string> = {
   amber: "bg-amber-500",
   yellow: "bg-yellow-500",
   lime: "bg-lime-500",
-  green: "bg-green-500",
+  green: "bg-[#52b788]",
   emerald: "bg-emerald-500",
   teal: "bg-violet-500",
   cyan: "bg-cyan-500",

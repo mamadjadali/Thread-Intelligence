@@ -13,10 +13,10 @@ type Presentation = {
 
 const presentation: Presentation = {
   /*mail: "jadalimamad@protonmail.com",*/
-  title: "Thread Intelligence",
+  title: "Mamali",
   // profile: "/profile.webp",
   description:
-    "Bonjour, new *Thread Intelligence Resource* which aims to provide *in-depth knowledge* of how threat actors target different industries, the *Tools* they use, and their possible motivations. This resource will offer contextual, anticipative, and actionable *cyberthreat* intelligence to help defend our organization against *Malware* and *Cyberattacks*.",
+    "Software Engineer",
   socials: [
     {
       label: "X",
