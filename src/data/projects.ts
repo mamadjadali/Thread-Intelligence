@@ -23,7 +23,7 @@ const projects: Project[] = [
   },
   {
     title: "RestAPI",
-    techs: ["🦀 Rust","Next.js","Docker","Postgres"],
+    techs: ["🦀 Rust","Next.js","🐋 Docker","🐘 Postgres"],
     link: "",
   },
   {
