@@ -37,19 +37,19 @@ const projects: Project[] = [
     link: "",
   },
   {
-    title: "ParsComTel",
-    techs: ["Astro","Tailwind"],
+    title: "Numeris",
+    techs: ["Next.js","Tailwind", "Mongodb"],
     link: "",
   },
   {
-    title: "Data Pipeline",
-    techs: ["🦀 Rust","Ownership model"],
+    title: "Issue Tracker",
+    techs: ["Next.js","Prisma", "MySQL", "NextAuth"],
     link: "",
   },
   {
-    title: "Network Application",
-    techs: ["🦀 Rust","TCP-UDP"],
-    link: "",
+    title: "REP",
+    techs: ["Next.js","Prismic", "Vercel"],
+    link: "https://rep-prismic-mamadjadalis-projects.vercel.app/",
   },
   {
     title: "Drone Flight",

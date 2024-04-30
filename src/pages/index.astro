@@ -111,22 +111,6 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
         </button>
         </div>
         <!--<SocialLinks />-->
-        <div class="grid grid-cols-2 gap-1.5 ">
-          <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/Linux-454955?style=for-the-badge&logo=linux&logoColor=white"></a>
-          <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/Red%20Hat-c81d25?style=for-the-badge&logo=redhat&logoColor=white"></a>
-          <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/C-454955?style=for-the-badge&logo=c&logoColor=white"></a>
-          <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/C%2B%2B-454955?style=for-the-badge&logo=c%2B%2B&logoColor=white"></a>
-          <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/Python-52b788?style=for-the-badge&logo=python&logoColor=white"></a>
-          <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/Rust-c81d25?style=for-the-badge&logo=rust&logoColor=white"></a>
-          <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/Shell_Script-454955?style=for-the-badge&logo=gnu-bash&logoColor=white"></a>
-          <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/Powershell-454955?style=for-the-badge&logo=powershell&logoColor=white"></a>
-          <!--<a href="#"><img alt="linux" src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"></a>-->
-          <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/React-11bed8?style=for-the-badge&logo=react&logoColor=white"></a>
-          <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/Django-1b7742?style=for-the-badge&logo=django&logoColor=white"></a>
-          <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/JavaScript-ffe066?style=for-the-badge&logo=javascript&logoColor=f17300"></a>
-          <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"></a>
-          <a href="#" class="m-auto"><img class=" rounded hover:brightness-50 hover:scale-95 duration-300" alt="CodeWars" src="https://img.shields.io/badge/Codewars-6 kyu-007ACC?style=for-the-badge&logo=Codewars&logoColor=white"></a>
-        </div>
       </div>
 
     </article>
@@ -134,12 +118,28 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row gap-3">
         <svg stroke="white" fill="none" stroke-width="2.5" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="2.3rem" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M14.5 4h2.5a3 3 0 0 1 3 3v10a3 3 0 0 1 -3 3h-10a3 3 0 0 1 -3 -3v-5"></path><path d="M6 5l-2 2l2 2"></path><path d="M10 9l2 -2l-2 -2"></path></svg>
-        <h3 class="text-lg text-neutral-100 m-1">Code</h3>
+        <h3 class="text-lg text-neutral-100 m-1"></h3>
         <!--<Link href="posts" label="See all posts" isUnderline target="_self" />-->
       </header>
-      {posts.length === 0 && <p>Soon, stay connected 👀...</p>}
-
-      <section class="flex flex-col gap-4 md:flex-row md:flex-wrap">
+      <!-- {posts.length === 0 && <p>Soon, stay connected 👀...</p>} -->
+      <div class="flex md:flex-row flex-col gap-2">
+        <div class="w-full md:w-3/4 p-4 text-center text-grey-lighter border rounded-xl border-gray-600">
+          <div class="text-start font-semibold text-2xl p-2 mb-3 ">Passionate to pursue.</div>
+          <p class="text-left p-3 font-medium">I enjoy learning new things and try to overcome new challenges while analyzing how I improved through them.</p>
+          <div class="grid grid-cols-2 gap-2 m-5 justify-items-start">
+            <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/C-454955?style=for-the-badge&logo=c&logoColor=white"></a>
+            <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/C%2B%2B-454955?style=for-the-badge&logo=c%2B%2B&logoColor=white"></a>
+            <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/Rust-c81d25?style=for-the-badge&logo=rust&logoColor=white"></a>
+            <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/Linux-454955?style=for-the-badge&logo=linux&logoColor=white"></a>
+            <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/React-11bed8?style=for-the-badge&logo=react&logoColor=white"></a>
+            <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/Python-52b788?style=for-the-badge&logo=python&logoColor=white"></a>
+            <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"></a>
+            <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/JavaScript-ffe066?style=for-the-badge&logo=javascript&logoColor=f17300"></a>
+          </div>
+        </div>
+        <div class="w-full md:w-1/4 p-4 text-center text-grey-darker border border-gray-600 rounded-xl">2</div>
+      </div>
+      <!-- <section class="flex flex-col gap-4 md:flex-row md:flex-wrap">
         {
           posts.length !== 0 &&
             posts
@@ -152,7 +152,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
                   slug={post.slug}
                 />
               ))
-        }
+        } -->
       </section>
     </article>
 
