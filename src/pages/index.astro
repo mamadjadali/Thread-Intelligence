@@ -12,6 +12,7 @@ import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 import presentation from "@/data/presentation";
 import projects from "@/data/projects";
 import { Example } from "@/components/ClipPathLink";
+import { SVGMaskEffectDemo } from "@/components/MaskEffect";
 
 const posts = (await getCollection("posts")).sort(function (first, second) {
   return second.data.publishedAt.getTime() - first.data.publishedAt.getTime();
@@ -126,6 +127,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
       <div class="">
         <Example client:load />
       </div>
+      <SVGMaskEffectDemo client:load />
       <!-- <section class="flex flex-col gap-4 md:flex-row md:flex-wrap">
         {
           posts.length !== 0 &&
