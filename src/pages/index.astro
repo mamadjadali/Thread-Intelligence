@@ -11,6 +11,7 @@ import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 
 import presentation from "@/data/presentation";
 import projects from "@/data/projects";
+import { Example } from "@/components/ClipPathLink";
 
 const posts = (await getCollection("posts")).sort(function (first, second) {
   return second.data.publishedAt.getTime() - first.data.publishedAt.getTime();
@@ -71,7 +72,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
             letter-spacing: 0.8px;
             border-radius: 10px;
             transition: all .3s;
-            border: 1px solid rgba(156, 156, 156, 0.466);
+            border: 1px solid rgba(156, 156, 156, 0.205);
           }
 
           .BG {
@@ -79,7 +80,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
             content: "";
             width: 100%;
             height: 100%;
-            background: #3a3a41;
+            background: #47474d61;
             z-index: -1;
             border-radius: 10px;
             pointer-events: none;
@@ -122,22 +123,8 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
         <!--<Link href="posts" label="See all posts" isUnderline target="_self" />-->
       </header>
       <!-- {posts.length === 0 && <p>Soon, stay connected 👀...</p>} -->
-      <div class="flex md:flex-row flex-col gap-2">
-        <div class="w-full md:w-3/4 p-4 text-center text-grey-lighter border rounded-xl border-gray-600">
-          <div class="text-start font-semibold text-2xl p-2 mb-3 ">Passionate to pursue.</div>
-          <p class="text-left p-3 font-medium">I enjoy learning new things and try to overcome new challenges while analyzing how I improved through them.</p>
-          <div class="grid grid-cols-2 gap-2 m-5 justify-items-start">
-            <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/C-454955?style=for-the-badge&logo=c&logoColor=white"></a>
-            <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/C%2B%2B-454955?style=for-the-badge&logo=c%2B%2B&logoColor=white"></a>
-            <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/Rust-c81d25?style=for-the-badge&logo=rust&logoColor=white"></a>
-            <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/Linux-454955?style=for-the-badge&logo=linux&logoColor=white"></a>
-            <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/React-11bed8?style=for-the-badge&logo=react&logoColor=white"></a>
-            <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/Python-52b788?style=for-the-badge&logo=python&logoColor=white"></a>
-            <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"></a>
-            <a href="#"><img class="rounded hover:brightness-150 duration-300" alt="linux" src="https://img.shields.io/badge/JavaScript-ffe066?style=for-the-badge&logo=javascript&logoColor=f17300"></a>
-          </div>
-        </div>
-        <div class="w-full md:w-1/4 p-4 text-center text-grey-darker border border-gray-600 rounded-xl">2</div>
+      <div class="">
+        <Example client:load />
       </div>
       <!-- <section class="flex flex-col gap-4 md:flex-row md:flex-wrap">
         {
