@@ -1,4 +1,3 @@
-"use client";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
@@ -23,27 +22,21 @@ export const MaskContainer = ({
     const rect = containerRef.current.getBoundingClientRect();
     setMousePosition({ x: e.clientX - rect.left, y: e.clientY - rect.top });
   };
-
+ 
   useEffect(() => {
-    const updateMousePosition = (e: MouseEvent) => {
-      const rect = containerRef.current.getBoundingClientRect();
-      setMousePosition({ x: e.clientX - rect.left, y: e.clientY - rect.top });
-    };
-
-    const handleMouseMove = (e: MouseEvent) => {
-      requestAnimationFrame(() => {
-        updateMousePosition(e);
-      });
-    };
-
-    containerRef.current.addEventListener("mousemove", handleMouseMove);
-
+    window.addEventListener("mousemove", updateMousePosition);
     return () => {
-      containerRef.current.removeEventListener("mousemove", handleMouseMove);
+      if (containerRef.current) {
+        window.removeEventListener(
+          "mousemove",
+          updateMousePosition
+        );
+      }
     };
   }, []);
-  let maskSize = isHovered ? revealSize : size;
 
+  let maskSize = isHovered ? revealSize : size;
+ 
   return (
     <motion.div
       ref={containerRef}
@@ -60,7 +53,7 @@ export const MaskContainer = ({
           }px`,
           WebkitMaskSize: `${maskSize}px`,
         }}
-        transition={{ type: "tween", ease: "backOut", duration: 0.1 }}
+        transition={{ type: "tween", ease: "backOut", duration: 0.5 }}
       >
         <div className="absolute inset-0 bg-black h-full w-full z-0 opacity-50" />
         <div
@@ -75,7 +68,7 @@ export const MaskContainer = ({
           {children}
         </div>
       </motion.div>
-
+ 
       <div className="w-full h-full flex items-center justify-center  text-white">
         {revealText}
       </div>
