@@ -24,10 +24,10 @@ export const MaskContainer = ({
   };
  
   useEffect(() => {
-    window.addEventListener("mousemove", updateMousePosition);
+    containerRef.current.addEventListener("mousemove", updateMousePosition);
     return () => {
       if (containerRef.current) {
-        window.removeEventListener(
+        containerRef.current.removeEventListener(
           "mousemove",
           updateMousePosition
         );
